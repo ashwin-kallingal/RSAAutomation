@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 
@@ -17,7 +17,6 @@ public class BrowserTest {
 	public void getData()
 	{
 		System.out.println("Hello Guys");
-		/*System.setProperty("webdriver.chrome.driver", "chromedriver.exe");*/
 		WebDriver driver =new FirefoxDriver();
 		driver.get("https://ashwinkallingal-d9b2cfc9asbjekem.canadacentral-01.azurewebsites.net/webapp/");
 		String text =driver.findElement(By.cssSelector("h1")).getText();
